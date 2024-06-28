@@ -23,18 +23,14 @@ docker run -ti --platform=linux/amd64 --rm \
 # Patch fix example
 ```
 Patch contains:
-```
 @@ -58,3 +58,4 @@
  #define META_MUTTER_X11_INTEROP_VERSION 1
  #define META_WP_FRACTIONAL_SCALE_VERSION 1
  #define META_XDG_DIALOG_VERSION 1
 +#define META_WP_DRM_LEASE_DEVICE_V1_VERSION 1
-```
 
 In Gnome 46, there's no reference to [META_XDG_DIALOG_VERSION](https://gitlab.gnome.org/GNOME/mutter/-/blob/gnome-46/src/wayland/meta-wayland-versions.h?ref_type=heads):
-```
 @@ -59,1 +60,2 @@
  #define META_WP_FRACTIONAL_SCALE_VERSION 1
 +#define META_WP_DRM_LEASE_DEVICE_V1_VERSION 1
-```
 ```
